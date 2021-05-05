@@ -121,9 +121,14 @@ nav ul li {
   }
 }
 
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .profile-img {
   width: 16rem;
-  height: 18rem;;
   border-radius: 50%;
   padding: .3rem;
   border: 1px solid var(--primary-orange);
@@ -134,8 +139,8 @@ nav ul li {
   text-transform: uppercase;
 }
 
-.photo-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }
